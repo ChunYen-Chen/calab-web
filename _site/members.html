@@ -2,78 +2,78 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Members - NTU - CALAB</title>
-	<!-- Icons-->
-	<script src="https://kit.fontawesome.com/d7b40906a4.js" crossorigin="anonymous"></script>
-	<!-- BostStrapGrid -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	
+    <title>Members - NTU - CALAB</title>
+    <!-- Icons-->
+    <script src="https://kit.fontawesome.com/d7b40906a4.js" crossorigin="anonymous"></script>
+    <!-- BostStrapGrid -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 
-	<!-- Custom CSS -->
-	<link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
 
-	<!-- Google font -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&family=Rye&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Volkhov&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 <nav class="navbar">
-	<div class="navbar-head">
-		<a href="./index.html" >
-			<i class="fas fa-calculator"></i>
-			<b>NTU-CALAB</b>
-		</a>
-	</div>
+    <div class="navbar-head">
+        <a href="./index.html" >
+            <i class="fas fa-calculator"></i>
+            <b>NTU-CALAB</b>
+        </a>
+    </div>
 
-	<button class="nav-collapse-button" id="collapsed">
-		<i class="fas fa-bars"></i>
-	</button>
+    <button class="nav-collapse-button" id="collapsed">
+        <i class="fas fa-bars"></i>
+    </button>
 
-	<script>
-		$('.nav-collapse-button').click(function() {
-			var thisId = $(this).attr('id')
-			if ( thisId == 'collapsed'){
-				$('.navbar-opts').css({'display':'inline'});
-				$(this).attr('id','shown');
-			} else if ( thisId == 'shown') {
-				$('.navbar-opts').css({'display':'none'});
-				$(this).attr('id','collapsed');
-			}
-		});
+    <script>
+        $('.nav-collapse-button').click(function() {
+            var thisId = $(this).attr('id')
+            if ( thisId == 'collapsed'){
+                $('.navbar-opts').css({'display':'inline'});
+                $(this).attr('id','shown');
+            } else if ( thisId == 'shown') {
+                $('.navbar-opts').css({'display':'none'});
+                $(this).attr('id','collapsed');
+            }
+        });
 
-		function on_resize(c,t){onresize=function(){clearTimeout(t);t=setTimeout(c,100)};return c};
-		on_resize( function(){
-			var navSpace = $('.navbar').outerWidth();
-			if (navSpace > 890 ) {
-				$('.navbar-opts').show();
-			}
-		});
-	</script>
+        function on_resize(c,t){onresize=function(){clearTimeout(t);t=setTimeout(c,100)};return c};
+        on_resize( function(){
+            var navSpace = $('.navbar').outerWidth();
+            if (navSpace > 890 ) {
+                $('.navbar-opts').show();
+            }
+        });
+    </script>
 
     <div class="navbar-opts">
         <ul>
             <li> <a href="./news.html" >         News         </a> </li>
             <li> <a href="./projects.html" >     Projects     </a> </li>
-            <li> <a href="./members.html" >	     Members	  </a> </li>
-            <li> <a href="./gallery.html" >      Gallery	  </a> </li>
+            <li> <a href="./members.html" >         Members      </a> </li>
+            <li> <a href="./gallery.html" >      Gallery      </a> </li>
             <li> <a href="./publications.html" > Publications </a> </li>
-            <li> <a href="./lab.html" >	         Lab	      </a> </li>
-            <li> <a href="./contact.html">	     Contact Us   </a> </li>
-            <!-- <li> <a href="./contact.html" style="color: #FFFFCC;">	Contact Us </a>	</li> -->
+            <li> <a href="./lab.html" >             Lab          </a> </li>
+            <li> <a href="./contact.html">         Contact Us   </a> </li>
+            <!-- <li> <a href="./contact.html" style="color: #FFFFCC;">    Contact Us </a>    </li> -->
         </ul>
     </div>
 
@@ -81,32 +81,32 @@
  </nav>
 
  <script>
- 	const debounce = (fn) =>{
-		let frame;
-		return (...params) =>{
-			if (frame){
-				cancelAnimationFrame(frame);
-			}
-			frame = requestAnimationFrame(() => {
-				fn(...params);
-			});
-		}
-	};
-	const storeScroll = () => {
-		document.documentElement.dataset.scroll = window.scrollY;
-	};
+     const debounce = (fn) =>{
+        let frame;
+        return (...params) =>{
+            if (frame){
+                cancelAnimationFrame(frame);
+            }
+            frame = requestAnimationFrame(() => {
+                fn(...params);
+            });
+        }
+    };
+    const storeScroll = () => {
+        document.documentElement.dataset.scroll = window.scrollY;
+    };
 
-	document.addEventListener('scroll',debounce(storeScroll), {passive:true});
-	storeScroll();
+    document.addEventListener('scroll',debounce(storeScroll), {passive:true});
+    storeScroll();
  </script>
 
 <header>
 <div class="container-fluid">
-	<div class="row title">
-		<h1>
-			Members
-		</h1>
-	</div>
+    <div class="row title">
+        <h1>
+            Members
+        </h1>
+    </div>
 </div>
 </header>
 
@@ -114,884 +114,581 @@
 
 
 <div class="container-fluid">
-	<div class="row">
-		<div class=" nav-member">
-			<ul>
+    <div class="row">
+        <div class="nav-member">
+            <ul>
                 <li><a href="#Professor"> Professor      </a> </li>
                 <li><a href="#Assistant"> Assistant      </a> </li>
                 <li><a href="#Ph.D">      Ph.D           </a> </li>
                 <li><a href="#Master">    Master         </a> </li>
                 <li><a href="#Bachelor">  Bachelor       </a> </li>
                 <li><a href="#former">    Former_Members </a> </li>
-			</ul>
-		</div>
+            </ul>
+        </div>
 
-		<div class="col-lg-8 offset-lg-2">
-			<div class="container-fluid list-container">
-				
-				<div class="row">
-					<div class="col-md-8">
-						<h3 id=Professor>Professor</h3>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/chiueh.jpg">
-						</div>
-						
-					</div>
+        <div class="col-lg-8 offset-lg-2">
+            <div class="container-fluid list-container">
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 id=Professor>Professor</h3>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/chiueh.jpg">
+                        </div>
+                    </div>
 
-					<div class="col-md-8">
-						<h4><a href="mailto:chiuehth@phys.ntu.edu.tw">闕志鴻 (Tzihong Chiueh)</a></h4>
-						<ul>
-							<li>Position: Professor</li>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:chiuehth@phys.ntu.edu.tw"> 闕志鴻 (Tzihong Chiueh) </a> </h4>
+                        <ul>
+                            <li>Position: Professor</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="Chiueh">
+                                    Tzihong Chiueh was born in Hsi-Tser (汐止), Taipei County, Nov. 29, 1955. 
+                                    He obtained BS/Physics, MS/Physics and PhD/Physics in 1978, 1980 and 1985 from NTU, UCLA and UT Austin, respectively. 
+                                    During 1985 to 1989, he worked as a postdoc fellow in University of Colorado in Boulder. 
+                                    In 1989, he joined Physics Department, National Central University as a faculty member, and in 1992 he became a faculty member of the then newly formed Institute of Astronomy, National Central University, also serving as the Director. 
+                                    Since 1998, he joined Physics Department NTU as a faculty member. 
+                                    He also holds a joint appointment with Academia Sinica Institute of Astronomy and Astrophysics (ASIAA) ever since 1993. 
+                                    In 1997-1999, he serves in National Science Council as the Co-Chairman of the Physics Research Review Committee.
+                                    Tzihong Chiueh's research interests include Theoretical Astrophysics, Computational Astrophysics and Astrophysics instrumentations. 
+                                    He was awarded with the Outstanding Research Awards of National Science Council in 1991, 1994 and 2003, and was appointed as the NTU Distinguished Professor since 2007.
+                                </div>
+                                <a class="more_Chiueh" style="display:inline;">...more</a>
+                                <a class="less_Chiueh" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_Chiueh').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_Chiueh').css({'display':'inline'});
+                                        $('#Chiueh').css({'max-height':'none'});
+                                    });
 
-							
+                                    $('.less_Chiueh').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_Chiueh').css({'display':'inline'});
+                                        $('#Chiueh').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:chiuehth@phys.ntu.edu.tw"> chiuehth@phys.ntu.edu.tw </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/bonwood.jpg">
+                        </div>
+                    </div>
 
-							<li>
-								Intro:<br>
-								<div class="intro" id="Chiueh">
-									Tzihong Chiueh was born in Hsi-Tser (汐止), Taipei County, Nov. 29, 1955.  He obtained BS/Physics, MS/Physics and PhD/Physics in 1978, 1980 and 1985 from NTU, UCLA and UT Austin, respectively.  During 1985 to 1989, he worked as a postdoc fellow in University of Colorado in Boulder.  In 1989, he joined Physics Department, National Central University as a faculty member, and in 1992 he became a faculty member of the then newly formed Institute of Astronomy, National Central University, also serving as the Director.  Since 1998, he joined Physics Department NTU as a faculty member.  He also holds a joint appointment with Academia Sinica Institute of Astronomy and Astrophysics (ASIAA) ever since 1993.  In 1997-1999, he serves in National Science Council as the Co-Chairman of the Physics Research Review Committee.
-Tzihong Chiueh's research interests include Theoretical Astrophysics, Computational Astrophysics and Astrophysics instrumentations.  He was awarded with the Outstanding Research Awards of National Science Council in 1991, 1994 and 2003, and was appointed as the NTU Distinguished Professor since 2007.
-								</div>
-								
-								
-								<a class="more_Chiueh" style="display:inline;">...more</a>
-								<a class="less_Chiueh" style="display:none;">...less</a>
-								<script>
-									$('.more_Chiueh').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_Chiueh').css({'display':'inline'});
-										$('#Chiueh').css({'max-height':'none'});
-									});
-				
-									$('.less_Chiueh').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_Chiueh').css({'display':'inline'});
-										$('#Chiueh').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:chiuehth@phys.ntu.edu.tw">chiuehth@phys.ntu.edu.tw</a>
-							</li>
-							
---!>
-							
-			
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/bonwood.jpg">
-						</div>
-						
-					</div>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:bonwood@phys.ntu.edu.tw"> 胡德邦 (Tak Pong Woo) </a> </h4>
+                        <ul>
+                            <li>Position: Assistant Professor</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="bonwood">
+                                    Nothing here yet.
+                                </div>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:bonwood@phys.ntu.edu.tw"> bonwood@phys.ntu.edu.tw </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
 
-					<div class="col-md-8">
-						<h4><a href="mailto:bonwood@phys.ntu.edu.tw">胡德邦 (Tak Pong Woo)</a></h4>
-						<ul>
-							<li>Position: Assistant Professor</li>
+                <hr>
 
-							
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 id=Assistant>Assistant</h3>
+                    </div>
+                </div>
 
-							<li>
-								Intro:<br>
-								<div class="intro" id="bonwood">
-									
-								</div>
-								
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:bonwood@phys.ntu.edu.tw">bonwood@phys.ntu.edu.tw</a>
-							</li>
-							
---!>
-							
-			
-							
-						</ul>
-					</div>
-				</div>
-				
-				<hr>
-				
-				<div class="row">
-					<div class="col-md-8">
-						<h3 id=Assistant>Assistant</h3>
-					</div>
-				</div>
-				
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/xuanweishan.jpg">
-						</div>
-						
-					</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/xuanweishan.jpg">
+                        </div>
+                    </div>
 
-					<div class="col-md-8">
-						<h4><a href="mailto:xuanweishan@gmail.com">曾煒軒 (Tseng, Wei-Hsuan)</a></h4>
-						<ul>
-							<li>Position: Research Assistant</li>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:xuanweishan@gmail.com"> 曾煒軒 (Tseng, Wei-Hsuan) </a> </h4>
+                        <ul>
+                            <li> Position: Research Assistant </li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="xuanweishan">
+                                    Wei-Hsuan is a research asistant at NTU from April 2020. Helping build GPU clusters and mentian the system.
+                                </div>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:xuanweishan@gmail.com"> xuanweishan@gmail.com </a> </li> -->
+                            <li> Projects: <a href="https://github.com/calab-ntu/eureka/wiki"> eureka </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 id=Ph.D>Ph.D</h3>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/koalakawaii.jpg">
+                        </div>
+                    </div>
 
-							
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:d07222009@ntu.edu.tw"> 蘇冠銘 (Guna-Ming Su) </a> </h4>
+                        <ul>
+                            <li>Position: Ph.D</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="koarakawaii">
+                                    Hello, I am Guan-Ming Su. 
+				    I was originally working on experimental condensed matter physics during my master and first two years Ph.D, but later found simulation and programming so interesting that I decided to switch to the current field. 
+				    Now I am in the learning phase of cosmology simulation, especially about the large scale structure, and hope to catch on this cutting edge science with tons of unsolved problems leaving us to explore :)  
+                                </div>
+                                <a class="more_koarakawaii" style="display:inline;">...more</a>
+                                <a class="less_koarakawaii" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_koarakawaii').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_koarakawaii').css({'display':'inline'});
+                                        $('#koarakawaii').css({'max-height':'none'});
+                                    });
+                
+                                    $('.less_koarakawaii').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_koarakawaii').css({'display':'inline'});
+                                        $('#koarakawaii').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:d07222009@ntu.edu.tw"> d07222009@ntu.edu.tw </a> </li> -->
+                            <li> Projects: re-construct Milky-Way scale dark matter halo </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                    </div>
 
-							<li>
-								Intro:<br>
-								<div class="intro" id="xuanweishan">
-									Wei-Hsuan is a research asistant at NTU from April 2020. Helping build GPU clusters and mentian the system.
-								</div>
-								
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:xuanweishan@gmail.com">xuanweishan@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									<a href="https://github.com/calab-ntu/eureka/wiki">eureka</a>
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				<hr>
-				
-				<div class="row">
-					<div class="col-md-8">
-						<h3 id=Ph.D>Ph.D</h3>
-					</div>
-				</div>
-				
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/koalakawaii.jpg">
-						</div>
-						
-					</div>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:zengbs@gmail.com">曾柏勳 (Po-Hsun Tseng) </a> </h4>
+                        <ul>
+                            <li>Position: Ph.D</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="tseng">
+                                    I am interested in numerical analysis, data analysis, data visualization, and developing codes for dynamics simulation in astrophysical problems.
+                                </div>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:zengbs@gmail.com">zengbs@gmail.com </a> </li> -->
+                            <li> Projects:  relativistic magnetohydrodynamics, AGN feedback, and high energy physics. </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 id=Master>Master</h3>
+                    </div>
+                </div>
 
-					<div class="col-md-8">
-						<h4><a href="mailto:d07222009@ntu.edu.tw">蘇冠銘 (Guna-Ming Su)</a></h4>
-						<ul>
-							<li>Position: Ph.D</li>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/vicent.jpg">
+                        </div>
+                    </div>
 
-							
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:vincentleebig@gmail.com"> 李奕廣 (Vicent Lee) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="vicent">
+                                    I'm in the second year of the master's programs, I'm working on simulating star formation to find the possible physical answer of an observation result.
+                                </div>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:vincentleebig@gmail.com">vincentleebig@gmail.com </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/liChun.jpg">
+                        </div>
+                    </div>
 
-							<li>
-								Intro:<br>
-								<div class="intro" id="koarakawaii">
-									Hello, I am Guan-Ming Su. I was originally working on experimental condensed matter physics during my master and first two years Ph.D, but later found simulation and programming so interesting that I decided to switch to the current field. Now I am in the learning phase of cosmology simulation, especially about the large scale structure, and hope to catch on this cutting edge science with tons of unsolved problems leaving us to explore :)  
-								</div>
-								
-								
-								<a class="more_koarakawaii" style="display:inline;">...more</a>
-								<a class="less_koarakawaii" style="display:none;">...less</a>
-								<script>
-									$('.more_koarakawaii').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_koarakawaii').css({'display':'inline'});
-										$('#koarakawaii').css({'max-height':'none'});
-									});
-				
-									$('.less_koarakawaii').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_koarakawaii').css({'display':'inline'});
-										$('#koarakawaii').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:d07222009@ntu.edu.tw">d07222009@ntu.edu.tw</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									re-construct Milky-Way scale dark matter halo
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-					</div>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:r08244004@ntu.edu.tw"> 黃立鈞 (Li Chun Huang) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="liChun">
+                                    A master student of astrophysics working about the tidal force effect of psiDM and CDM.
+                                </div>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:r08244004@ntu.edu.tw">r08244004@ntu.edu.tw </a> </li> -->
+                            <li> Projects:  Compare different between psiDM and CDM under tidal force. </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/chunyen.jpg">
+                        </div>
+                    </div>
 
-					<div class="col-md-8">
-						<h4><a href="mailto:zengbs@gmail.com">曾柏勳（Po-Hsun Tseng）</a></h4>
-						<ul>
-							<li>Position: Ph.D</li>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:chunyenchen2019@gmail.com"> Chun-Yen Chen (陳俊延) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="chunyen">
+                                    I am Chun-Yen. I was born in Kaohsiung. I like to play volleyball and try new things. Currently, I am adding the cosmic ray into GAMER.
+                                </div>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:chunyenchen2019@gmail.com">chunyenchen2019@gmail.com </a> </li> -->
+                            <li> Projects: Cosmic Ray </li>
+                        </ul>
+                    </div>
+                </div>
 
-							
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/arthurHsu.jpg">
+                        </div>
+                        
+                    </div>
 
-							<li>
-								Intro:<br>
-								<div class="intro" id="tseng">
-									I am interested in numerical analysis, data analysis, data visualization, and developing codes for dynamics simulation in astrophysical problems.
-								</div>
-								
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:zengbs@gmail.com">zengbs@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									relativistic magnetohydrodynamics, AGN feedback, and high energy physics.
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				<hr>
-				
-				<div class="row">
-					<div class="col-md-8">
-						<h3 id=Master>Master</h3>
-					</div>
-				</div>
-				
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/vicent.jpg">
-						</div>
-						
-					</div>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:arthurhsu3388@gmail.com"> 許藝薰 (Yi-Hsiung Hsu, a.k.a Arthur Hsu) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="arthurHsu">
+                                    I earned Bachelor of Science, department of physics at National Taiwan University at 2018. 
+                                    I'm now pursuing Master degree at National Taiwan University. 
+                                    My project is analyzing linear perturbations in universe of multi-component ultralight axion. 
+                                    We apply different approximations to alleviate the required time of calculating stiff evolution equations. 
+                                    These calculations are further promoted to multi-component universe.
+                                </div>
+                                <a class="more_arthurHsu" style="display:inline;">...more</a>
+                                <a class="less_arthurHsu" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_arthurHsu').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_arthurHsu').css({'display':'inline'});
+                                        $('#arthurHsu').css({'max-height':'none'});
+                                    });
+                
+                                    $('.less_arthurHsu').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_arthurHsu').css({'display':'inline'});
+                                        $('#arthurHsu').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:arthurhsu3388@gmail.com">arthurhsu3388@gmail.com </a> </li> -->
+                            <li> Projects: Evolution of perturbations and spectra in multi-component ultralight axionic universes </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/cliff.jpg">
+                        </div>
+                    </div>
 
-					<div class="col-md-8">
-						<h4><a href="mailto:vincentleebig@gmail.com">李奕廣 (Vicent Lee)</a></h4>
-						<ul>
-							<li>Position: Master</li>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:cliff200905@gmail.com"> 林俊佑 (Chun-Yu Lin) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="cliff">
+                                    B.Sc. in Physics, National Taiwan University (2014~2018) 
+                                    Chau-Ting Chang Summer Research Scholarship (2015) 
+                                    Research purpose: 
+                                    The feature of a wave dark matter soliton does not shown in the rotation curves of low surface brightness galaxies. 
+                                    The random motion of the soliton and the high velocity dispersion near the galactic center may slow down the rotation speed and erase the feature of the soliton. 
+                                    To prove this statement, the mock observations of GAMER simulations of galactic disks inside a wave dark matter halos are compared to the observations.
+                                </div>
+                                <a class="more_cliff" style="display:inline;">...more</a>
+                                <a class="less_cliff" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_cliff').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_cliff').css({'display':'inline'});
+                                        $('#cliff').css({'max-height':'none'});
+                                    });
+                
+                                    $('.less_cliff').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_cliff').css({'display':'inline'});
+                                        $('#cliff').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:cliff200905@gmail.com"> cliff200905@gmail.com </a> </li> -->
+                            <li> Projects: Galactic Rotation Curves inside the Wave Dark Matter Halo </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/weininden.jpg">
+                        </div>
+                    </div>
 
-							
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:weininden@gmail.com"> 鄧為寧 (Wei-Ning Deng) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="weininden">
+                                    I graduated from the physics department of National Taiwan University. 
+                                    I have research experiences about dust evolution of galaxies, SMA observation project about dwarf galaxies, and Hawking radiation from Black Hole. 
+                                    Now I am working on applying wave dark matter to the evolution of Globular clusters.
+                                </div>
+                                <a class="more_weininden" style="display:inline;">...more</a>
+                                <a class="less_weininden" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_weininden').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_weininden').css({'display':'inline'});
+                                        $('#weininden').css({'max-height':'none'});
+                                    });
+                                    $('.less_weininden').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_weininden').css({'display':'inline'});
+                                        $('#weininden').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:weininden@gmail.com"> weininden@gmail.com </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/yiHao.jpg">
+                        </div>
+                    </div>
 
-							<li>
-								Intro:<br>
-								<div class="intro" id="vicent">
-									I'm in the second year of the master's programs, I'm working on simulating star formation to find the possible physical answer of an observation result.
-								</div>
-								
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:vincentleebig@gmail.com">vincentleebig@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/liChun.jpg">
-						</div>
-						
-					</div>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:r05244003@ntu.edu.tw"> 華奕豪 (Yi-Hao Hua) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="yiHao">
+                                    I was joining this lab at November 8th,2019 and my topic is soliton random walk in psidm simulation based on the paper 'Soliton Random Walk and the Cluster-Stripping Problem in Ultralight Dark Matter' by professor Hsi-Yu Schive, Tzihong Chiueh, and Tom Broadhurst. 
+                                    The object about this topic is finding out why will soliton random walk in the simulation? Did it affect by gluon or halo potential or something else? 
+                                    In advance , if we assure that the soliton random walk can be reproduce by local domain, we can even produce the simulation of Milky Way soliton random walk regardless of the extensive and massive loading on simulating the whole Milky Way. 
+                                    My job here is simulating different kind of halo and analyzing their soliton random walk to discover what behind them. 
+                                    It is a pleasure to learn in this lab and professor's teaching. 
+                                    This is a fascinating subject to work on. 
+                                </div>
+                                <a class="more_yiHao" style="display:inline;">...more</a>
+                                <a class="less_yiHao" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_yiHao').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_yiHao').css({'display':'inline'});
+                                        $('#yiHao').css({'max-height':'none'});
+                                    });
+                
+                                    $('.less_yiHao').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_yiHao').css({'display':'inline'});
+                                        $('#yiHao').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:r05244003@ntu.edu.tw"> r05244003@ntu.edu.tw </a> </li> -->
+                            <li> Projects: psidm--soliton-random-walk </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/albert.jpg">
+                        </div>
+                    </div>
 
-					<div class="col-md-8">
-						<h4><a href="mailto:r08244004@ntu.edu.tw">黃立鈞 (Li Chun Huang)</a></h4>
-						<ul>
-							<li>Position: Master</li>
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:cololnist288@gmail.com"> 吳文華 (Wen-Hua Wu) </a> </h4>
+                        <ul>
+                            <li>Position: Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="albert">
+                                    I am an undergraduate student in department of physics of NTU. 
+                                    My research topic is dark matter and astrophysical simulation. 
+                                    I am in the working group of GAMER, a GPU-accelerated adaptive mesh refinement code used in astrophysical simulation. 
+                                    In it, I completed a program of building the initial conditions (ICs) of particles in N-body simulations, which can be used to initialize physical parameters in certain astrophysical scenarios such as Fornax dwarf galaxy. 
+                                    My current research topic is Fornax cusp-core and timing problem. 
+                                    I plan to focus on research in wave dark matter simulation.
+                                </div>
+                                <a class="more_albert" style="display:inline;">...more</a>
+                                <a class="less_albert" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_albert').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_albert').css({'display':'inline'});
+                                        $('#albert').css({'max-height':'none'});
+                                    });
+                
+                                    $('.less_albert').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_albert').css({'display':'inline'});
+                                        $('#albert').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:cololnist288@gmail.com"> cololnist288@gmail.com </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row">
+                    <div class="col-md-8">
+                        <h3 id=Bachelor>Bachelor</h3>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/shuang.jpg">
+                        </div>
+                    </div>
 
-							
+                    <div class="col-md-8">
+                        <h4> <a href="mailto:shuangshuang0411@gmail.com"> 陳雙雙 (Chen Shuang Shuang) </a> </h4>
+                        <ul>
+                            <li>Position: Bachelor</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="shuang">
+                                    I am a student at National Taiwan University Department of Physics. 
+                                    My research interests are dark matter and supermassive black holes. 
+                                    Now I am working on applying wave dark matter to the evolution of supermassive black holes.
+                                </div>
+                            </li>
+                            <!-- <li> e-mail: <a href="mailto:shuangshuang0411@gmail.com"> shuangshuang0411@gmail.com </a> </li> -->
+                        </ul>
+                    </div>
+                </div>
+                
+                <hr>
+                
+                <div class="row list-container">
+                    <div class="col-md-8">
+                        <h3 id="former">Former</h3>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="member-image-container">
+                            <img src="./assets/images/members/edward.jpg">
+                        </div>
+                    </div>
 
-							<li>
-								Intro:<br>
-								<div class="intro" id="liChun">
-									A master student of astrophysics working about the tidal force effect of psiDM and CDM.
-								</div>
-								
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:r08244004@ntu.edu.tw">r08244004@ntu.edu.tw</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									Compare different between psiDM and CDM under tidal force.
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/chunyen.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:chunyenchen2019@gmail.com">Chun-Yen Chen (陳俊延)</a></h4>
-						<ul>
-							<li>Position: Master</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="chunyen">
-									I am Chun-Yen. I was born in Kaohsiung. I like to play volleyball and try new things. Currently, I am adding the cosmic ray into GAMER.
-								</div>
-								
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:chunyenchen2019@gmail.com">chunyenchen2019@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									Cosmic Ray
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/arthurHsu.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:arthurhsu3388@gmail.com">許藝薰 (Yi-Hsiung Hsu, a.k.a Arthur Hsu)</a></h4>
-						<ul>
-							<li>Position: Master</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="arthurHsu">
-									I earned Bachelor of Science, department of physics at National Taiwan University at 2018. I'm now pursuing Master degree at National Taiwan University. My project is analyzing linear perturbations in universe of multi-component ultralight axion. We apply different approximations to alleviate the required time of calculating stiff evolution equations. These calculations are further promoted to multi-component universe.
-								</div>
-								
-								
-								<a class="more_arthurHsu" style="display:inline;">...more</a>
-								<a class="less_arthurHsu" style="display:none;">...less</a>
-								<script>
-									$('.more_arthurHsu').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_arthurHsu').css({'display':'inline'});
-										$('#arthurHsu').css({'max-height':'none'});
-									});
-				
-									$('.less_arthurHsu').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_arthurHsu').css({'display':'inline'});
-										$('#arthurHsu').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:arthurhsu3388@gmail.com">arthurhsu3388@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									Evolution of perturbations and spectra in multi-component ultralight axionic universes
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/cliff.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:cliff200905@gmail.com">林俊佑 (Chun-Yu Lin)</a></h4>
-						<ul>
-							<li>Position: Master</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="cliff">
-									B.Sc. in Physics, National Taiwan University (2014~2018) Chau-Ting Chang Summer Research Scholarship (2015) Research purpose: The feature of a wave dark matter soliton does not shown in the rotation curves of low surface brightness galaxies. The random motion of the soliton and the high velocity dispersion near the galactic center may slow down the rotation speed and erase the feature of the soliton. To prove this statement, the mock observations of GAMER simulations of galactic disks inside a wave dark matter halos are compared to the observations.
-								</div>
-								
-								
-								<a class="more_cliff" style="display:inline;">...more</a>
-								<a class="less_cliff" style="display:none;">...less</a>
-								<script>
-									$('.more_cliff').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_cliff').css({'display':'inline'});
-										$('#cliff').css({'max-height':'none'});
-									});
-				
-									$('.less_cliff').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_cliff').css({'display':'inline'});
-										$('#cliff').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:cliff200905@gmail.com">cliff200905@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									Galactic Rotation Curves inside the Wave Dark Matter Halo
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/weininden.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:weininden@gmail.com">鄧為寧 (Wei-Ning Deng)</a></h4>
-						<ul>
-							<li>Position: Master</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="weininden">
-									I graduated from the physics department of National Taiwan University. I have research experiences about dust evolution of galaxies, SMA observation project about dwarf galaxies, and Hawking radiation from Black Hole. Now I am working on applying wave dark matter to the evolution of Globular clusters.
-								</div>
-								
-								
-								<a class="more_weininden" style="display:inline;">...more</a>
-								<a class="less_weininden" style="display:none;">...less</a>
-								<script>
-									$('.more_weininden').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_weininden').css({'display':'inline'});
-										$('#weininden').css({'max-height':'none'});
-									});
-				
-									$('.less_weininden').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_weininden').css({'display':'inline'});
-										$('#weininden').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:weininden@gmail.com">weininden@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/yiHao.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:r05244003@ntu.edu.tw">華奕豪 (Yi-Hao Hua)</a></h4>
-						<ul>
-							<li>Position: Master</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="yiHao">
-									I was joining this lab at November 8th,2019 and my topic is soliton random walk in psidm simulation based on the paper 'Soliton Random Walk and the Cluster-Stripping Problem in Ultralight Dark Matter' by professor Hsi-Yu Schive, Tzihong Chiueh, and Tom Broadhurst. The object about this topic is finding out why will soliton random walk in the simulation? Did it affect by gluon or halo potential or something else? In advance , if we assure that the soliton random walk can be reproduce by local domain, we can even produce the simulation of Milky Way soliton random walk regardless of the extensive and massive loading on simulating the whole Milky Way. My job here is simulating different kind of halo and analyzing their soliton random walk to discover what behind them. It is a pleasure to learn in this lab and professor's teaching.  This is a fascinating subject to work on. 
-								</div>
-								
-								
-								<a class="more_yiHao" style="display:inline;">...more</a>
-								<a class="less_yiHao" style="display:none;">...less</a>
-								<script>
-									$('.more_yiHao').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_yiHao').css({'display':'inline'});
-										$('#yiHao').css({'max-height':'none'});
-									});
-				
-									$('.less_yiHao').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_yiHao').css({'display':'inline'});
-										$('#yiHao').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:r05244003@ntu.edu.tw">r05244003@ntu.edu.tw</a>
-							</li>
-							
---!>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									psidm--soliton-random-walk
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/albert.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:cololnist288@gmail.com">吳文華 (Wen-Hua Wu)</a></h4>
-						<ul>
-							<li>Position: Master</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="albert">
-									I am an undergraduate student in department of physics of NTU. My research topic is dark matter and astrophysical simulation. I am in the working group of GAMER, a GPU-accelerated adaptive mesh refinement code used in astrophysical simulation. In it, I completed a program of building the initial conditions (ICs) of particles in N-body simulations, which can be used to initialize physical parameters in certain astrophysical scenarios such as Fornax dwarf galaxy. My current research topic is Fornax cusp-core and timing problem. I plan to focus on research in wave dark matter simulation.
-								</div>
-								
-								
-								<a class="more_albert" style="display:inline;">...more</a>
-								<a class="less_albert" style="display:none;">...less</a>
-								<script>
-									$('.more_albert').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_albert').css({'display':'inline'});
-										$('#albert').css({'max-height':'none'});
-									});
-				
-									$('.less_albert').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_albert').css({'display':'inline'});
-										$('#albert').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:cololnist288@gmail.com">cololnist288@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-						</ul>
-					</div>
-				</div>
-				
-				<hr>
-				
-				<div class="row">
-					<div class="col-md-8">
-						<h3 id=Bachelor>Bachelor</h3>
-					</div>
-				</div>
-				
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/shuang.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:shuangshuang0411@gmail.com">陳雙雙 (Chen Shuang Shuang)</a></h4>
-						<ul>
-							<li>Position: Bachelor</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="shuang">
-									I am a student at National Taiwan University Department of Physics. My research interests are dark matter and supermassive black holes. Now I am working on applying wave dark matter to the evolution of supermassive black holes.
-								</div>
-								
-								
-							</li>
-<!--
-							
-							<li>
-								e-mail: <a href="mailto:shuangshuang0411@gmail.com">shuangshuang0411@gmail.com</a>
-							</li>
-							
---!>
-							
-			
-							
-						</ul>
-					</div>
-				</div>
-				
-				<hr>
-				
-				
-				<div class="row list-container">
-					<div class="col-md-8">
-						<h3 id="former">Former</h3>
-					</div>
-				</div>
-				
-				
-				<div class="row">
-					<div class="col-md-4">
-						
-						<div class="member-image-container">
-						<img src="./assets/images/members/edward.jpg">
-						</div>
-						
-					</div>
-
-					<div class="col-md-8">
-						<h4><a href="mailto:kh.leong@ed.ac.uk">梁家豪 (KaHou Leong)</a></h4>
-						<ul>
-							<li>Master</li>
-
-							
-
-							<li>
-								Intro:<br>
-								<div class="intro" id="edward">
-									My research interests are dark matter (especially, wave dark matter), physics in reionisation era and cosmological radiation transportation simulation. I am a PhD student in University of Edinburgh, (ROE, Royal Observatory Edinburgh) since 2020. year: 2015~2019 (NTU), 2020~current (ROE) Project : ENZO, cosmological radiation transportation simulation.
-								</div>
-								
-								
-								<a class="more_edward" style="display:inline;">...more</a>
-								<a class="less_edward" style="display:none;">...less</a>
-								<script>
-									$('.more_edward').click(function() {
-										$(this).css({'display':'none'});
-										$('.less_edward').css({'display':'inline'});
-										$('#edward').css({'max-height':'none'});
-									});
-				
-									$('.less_edward').click(function() {
-										$(this).css({'display':'none'});
-										$('.more_edward').css({'display':'inline'});
-										$('#edward').css({'max-height':'95px'});
-									});
-								</script>
-								
-							</li>
-							<!--
-							
-							<li>
-								e-mail: <a href="kh.leong@ed.ac.uk"></a>
-							</li>
-							
-							--!>
-							
-							<li>2015 ~ 2017</li>
-							
-			
-							
-							<li>
-								Projects: 
-								
-								
-									cosmological radiation transfer simulation -> cosmological radiation transportation simulation
-								
-								
-							</li>
-							
-						</ul>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</div>
+                    <div class="col-md-8">
+                        <h4><a href="mailto:kh.leong@ed.ac.uk">梁家豪 (KaHou Leong)</a></h4>
+                        <ul>
+                            <li>Master</li>
+                            <li>
+                                Intro:<br>
+                                <div class="intro" id="edward">
+                                    My research interests are dark matter (especially, wave dark matter), physics in reionisation era and cosmological radiation transportation simulation. 
+                                    I am a PhD student in University of Edinburgh, (ROE, Royal Observatory Edinburgh) since 2020. 
+                                    year: 2015~2019 (NTU), 2020~current (ROE) 
+                                    Project : ENZO, cosmological radiation transportation simulation.
+                                </div>
+                                <a class="more_edward" style="display:inline;">...more</a>
+                                <a class="less_edward" style="display:none;">...less</a>
+                                <script>
+                                    $('.more_edward').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.less_edward').css({'display':'inline'});
+                                        $('#edward').css({'max-height':'none'});
+                                    });
+                
+                                    $('.less_edward').click(function() {
+                                        $(this).css({'display':'none'});
+                                        $('.more_edward').css({'display':'inline'});
+                                        $('#edward').css({'max-height':'95px'});
+                                    });
+                                </script>
+                            </li>
+                            <!-- <li> e-mail: <a href="kh.leong@ed.ac.uk"> </a> </li> -->
+                            <li>2015 ~ 2017</li>
+                            <li> Projects: cosmological radiation transfer simulation -> cosmological radiation transportation simulation </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </div>
 
 
 <footer>
 <div class="container-fluid footer">
-	<div class="row">
-		<div class="col-sm-3 offset-sm-1 footer-element">
-			<p>©2022 NTU-CALAB</p>
-		</div>
+    <div class="row">
+        <div class="col-sm-3 offset-sm-1 footer-element">
+            <p>©2022 NTU-CALAB</p>
+        </div>
 
-		<div class="col-sm-3 footer-element">
-			<h6>Related Links</h6>
-			<a href="https://github.com/calab-ntu"><i class="fab fa-2x fa-github"></i></a>
-		</div>
+        <div class="col-sm-3 footer-element">
+            <h6>Related Links</h6>
+            <a href="https://github.com/calab-ntu"><i class="fab fa-2x fa-github"></i></a>
+        </div>
 
-	</div>
+    </div>
 </div>
 </footer>
 

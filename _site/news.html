@@ -2,78 +2,78 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>NEWS - NTU - CALAB</title>
-	<!-- Icons-->
-	<script src="https://kit.fontawesome.com/d7b40906a4.js" crossorigin="anonymous"></script>
-	<!-- BostStrapGrid -->
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!-- jQuery library -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<!-- Popper JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<!-- Latest compiled JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	
+    <title>NEWS - NTU - CALAB</title>
+    <!-- Icons-->
+    <script src="https://kit.fontawesome.com/d7b40906a4.js" crossorigin="anonymous"></script>
+    <!-- BostStrapGrid -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 
-	<!-- Custom CSS -->
-	<link href="./assets/css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="./assets/css/style.css" rel="stylesheet">
 
-	<!-- Google font -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&family=Rye&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Volkhov&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Volkhov&family=Roboto:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 
 
 <body>
 <nav class="navbar">
-	<div class="navbar-head">
-		<a href="./index.html" >
-			<i class="fas fa-calculator"></i>
-			<b>NTU-CALAB</b>
-		</a>
-	</div>
+    <div class="navbar-head">
+        <a href="./index.html" >
+            <i class="fas fa-calculator"></i>
+            <b>NTU-CALAB</b>
+        </a>
+    </div>
 
-	<button class="nav-collapse-button" id="collapsed">
-		<i class="fas fa-bars"></i>
-	</button>
+    <button class="nav-collapse-button" id="collapsed">
+        <i class="fas fa-bars"></i>
+    </button>
 
-	<script>
-		$('.nav-collapse-button').click(function() {
-			var thisId = $(this).attr('id')
-			if ( thisId == 'collapsed'){
-				$('.navbar-opts').css({'display':'inline'});
-				$(this).attr('id','shown');
-			} else if ( thisId == 'shown') {
-				$('.navbar-opts').css({'display':'none'});
-				$(this).attr('id','collapsed');
-			}
-		});
+    <script>
+        $('.nav-collapse-button').click(function() {
+            var thisId = $(this).attr('id')
+            if ( thisId == 'collapsed'){
+                $('.navbar-opts').css({'display':'inline'});
+                $(this).attr('id','shown');
+            } else if ( thisId == 'shown') {
+                $('.navbar-opts').css({'display':'none'});
+                $(this).attr('id','collapsed');
+            }
+        });
 
-		function on_resize(c,t){onresize=function(){clearTimeout(t);t=setTimeout(c,100)};return c};
-		on_resize( function(){
-			var navSpace = $('.navbar').outerWidth();
-			if (navSpace > 890 ) {
-				$('.navbar-opts').show();
-			}
-		});
-	</script>
+        function on_resize(c,t){onresize=function(){clearTimeout(t);t=setTimeout(c,100)};return c};
+        on_resize( function(){
+            var navSpace = $('.navbar').outerWidth();
+            if (navSpace > 890 ) {
+                $('.navbar-opts').show();
+            }
+        });
+    </script>
 
     <div class="navbar-opts">
         <ul>
             <li> <a href="./news.html" >         News         </a> </li>
             <li> <a href="./projects.html" >     Projects     </a> </li>
-            <li> <a href="./members.html" >	     Members	  </a> </li>
-            <li> <a href="./gallery.html" >      Gallery	  </a> </li>
+            <li> <a href="./members.html" >         Members      </a> </li>
+            <li> <a href="./gallery.html" >      Gallery      </a> </li>
             <li> <a href="./publications.html" > Publications </a> </li>
-            <li> <a href="./lab.html" >	         Lab	      </a> </li>
-            <li> <a href="./contact.html">	     Contact Us   </a> </li>
-            <!-- <li> <a href="./contact.html" style="color: #FFFFCC;">	Contact Us </a>	</li> -->
+            <li> <a href="./lab.html" >             Lab          </a> </li>
+            <li> <a href="./contact.html">         Contact Us   </a> </li>
+            <!-- <li> <a href="./contact.html" style="color: #FFFFCC;">    Contact Us </a>    </li> -->
         </ul>
     </div>
 
@@ -81,63 +81,63 @@
  </nav>
 
  <script>
- 	const debounce = (fn) =>{
-		let frame;
-		return (...params) =>{
-			if (frame){
-				cancelAnimationFrame(frame);
-			}
-			frame = requestAnimationFrame(() => {
-				fn(...params);
-			});
-		}
-	};
-	const storeScroll = () => {
-		document.documentElement.dataset.scroll = window.scrollY;
-	};
+     const debounce = (fn) =>{
+        let frame;
+        return (...params) =>{
+            if (frame){
+                cancelAnimationFrame(frame);
+            }
+            frame = requestAnimationFrame(() => {
+                fn(...params);
+            });
+        }
+    };
+    const storeScroll = () => {
+        document.documentElement.dataset.scroll = window.scrollY;
+    };
 
-	document.addEventListener('scroll',debounce(storeScroll), {passive:true});
-	storeScroll();
+    document.addEventListener('scroll',debounce(storeScroll), {passive:true});
+    storeScroll();
  </script>
 
 <header>
 <div class="container-fluid">
-	<div class="row title">
-		<h1>
-			NEWS
-		</h1>
-	</div>
+    <div class="row title">
+        <h1>
+            NEWS
+        </h1>
+    </div>
 </div>
 </header>
 
 
 <div class="container">
-	
-	<div class="row">
-		<div class="col-sm-6 offset-sm-3">
-			<h3>Welcome to Jekyll!</h3>
-			<p>October 11, 2020</p>
-			<p><p>You'll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+    
+    <div class="row">
+        <div class="col-sm-6 offset-sm-3">
+            <h3>Welcome to Jekyll!</h3>
+            <p>October 11, 2020</p>
+            <p><p>You'll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
 </p>
-		</div>
-	</div>
-	
+        </div>
+    </div>
+    
 </div>
 
 
 <footer>
 <div class="container-fluid footer">
-	<div class="row">
-		<div class="col-sm-3 offset-sm-1 footer-element">
-			<p>©2022 NTU-CALAB</p>
-		</div>
+    <div class="row">
+        <div class="col-sm-3 offset-sm-1 footer-element">
+            <p>©2022 NTU-CALAB</p>
+        </div>
 
-		<div class="col-sm-3 footer-element">
-			<h6>Related Links</h6>
-			<a href="https://github.com/calab-ntu"><i class="fab fa-2x fa-github"></i></a>
-		</div>
+        <div class="col-sm-3 footer-element">
+            <h6>Related Links</h6>
+            <a href="https://github.com/calab-ntu"><i class="fab fa-2x fa-github"></i></a>
+        </div>
 
-	</div>
+    </div>
 </div>
 </footer>
 

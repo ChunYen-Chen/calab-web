@@ -16,7 +16,7 @@ body { background-color: #FAFAFA; font-family: 'Noto Serif KR', serif; }
 @keyframes fade { 0% { opacity: 0; }
   100% { opacity: 1; } }
 
-.background-video { height: 100vh; width: 100vw; object-fit: cover; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: -1; background-image: url(/assets/images/Title_background.png); background-size: cover; background-position: center center; }
+.background-video { height: 100vh; width: 100vw; object-fit: cover; position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: -1; background-image: url(../..//assets/images/Title_background.png); background-size: cover; background-position: center center; }
 
 .intro { max-height: 95px; overflow: hidden; text-overflow: ellipsis; }
 
@@ -110,7 +110,7 @@ html:not([data-scroll='0']) .navbar { background-color: #030814; }
 
 @media (min-width: 890px) { .navbar-head { text-align: center; float: left; display: block; } .navbar-opts { list-style-type: none; margin: 0; padding: 0; float: right; display: block; } .navbar-opts ul { text-align: center; } .navbar-opts li { display: inline; float: left; } .nav-collapse-button { display: none; } }
 
-.title { height: 14em; display: block; text-align: center; background-color: #003300; background-image: url("/assets/images/new_title_background1.jpg"); background-repeat: no-repeat; background-position: button left; }
+.title { height: 14em; display: block; text-align: center; background-color: #003300; background-image: url("../../assets/images/new_title_background1.jpg"); background-repeat: no-repeat; background-position: button left; }
 
 .title h1 { margin: 0; color: #FFFFCC; font-family: 'Volkhov', cursive; text-transform: uppercase; }
 
